@@ -1,0 +1,35 @@
+{
+  "model_name": "EcoSort EfficientNetB0 resin visual screening model",
+  "architecture": "EfficientNetB0 ImageNet transfer learning",
+  "input": "224x224 RGB",
+  "classes": [
+    "PET",
+    "HDPE",
+    "PVC",
+    "LDPE",
+    "PP",
+    "PS"
+  ],
+  "selected_stage": "fine_tuned",
+  "training_sources": [
+    "Roboflow Plastic Sorting Algorithm v1",
+    "Roboflow Recy Clear Plastic Waste Type v1"
+  ],
+  "local_weak_labels_used": false,
+  "test_metrics": {
+    "test_images": 30,
+    "accuracy": 0.8666666666666667,
+    "macro_f1": 0.8793752543752543,
+    "selected_stage": "fine_tuned",
+    "classes": [
+      "PET",
+      "HDPE",
+      "PVC",
+      "LDPE",
+      "PP",
+      "PS"
+    ],
+    "split_unit": "image-level source-provided split; physical sample IDs unavailable in public sources"
+  },
+  "scientific_limit": "RGB image prediction is a visual screening estimate, not chemical verification."
+}

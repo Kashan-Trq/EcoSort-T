@@ -1,0 +1,6 @@
+{
+  "threshold": 0.6250000000000002,
+  "margin": 0.1,
+  "status": "Lowest validation threshold achieving >=85% accuracy among accepted predictions with minimum coverage.",
+  "warning": "Softmax score is not a calibrated probability of chemical polymer identity."
+}
